@@ -1,0 +1,168 @@
+Country,Regimetype,Overallscore,Electoralprocessandpluralism,Functioningofgovernment,Politicalparticipation,Politicalculture,Civilliberties,Officialstatename,InternetccTLD,iso2,iso3,Region
+Norway,Full democracy,9.81,10.0,9.64,10.0,10.0,9.41,The Kingdom of Norway,.no,NO,NOR,Europe
+Iceland,Full democracy,9.37,10.0,8.57,8.89,10.0,9.41,Iceland,.is,IS,ISL,Europe
+Sweden,Full democracy,9.26,9.58,9.29,8.33,10.0,9.12,The Kingdom of Sweden,.se,SE,SWE,Europe
+New Zealand,Full democracy,9.25,10.0,8.93,8.89,8.75,9.71,New Zealand,.nz,NZ,NZL,Oceania
+Canada,Full democracy,9.24,9.58,8.93,8.89,9.38,9.41,Canada,.ca,CA,CAN,Americas
+Finland,Full democracy,9.2,10.0,8.93,8.89,8.75,9.41,The Republic of Finland,.fi,FI,FIN,Europe
+Denmark,Full democracy,9.15,10.0,8.93,8.33,9.38,9.12,The Kingdom of Denmark,.dk,DK,DNK,Europe
+Ireland,Full democracy,9.05,10.0,7.86,8.33,9.38,9.71,Ireland,.ie,IE,IRL,Europe
+Australia,Full democracy,8.96,10.0,8.57,7.78,8.75,9.71,The Commonwealth of Australia,.au,AU,AUS,Oceania
+Netherlands,Full democracy,8.96,9.58,9.29,8.33,8.75,8.82,The Kingdom of the Netherlands,.nl,NL,NLD,Europe
+Taiwan,Full democracy,8.94,10.0,9.64,7.22,8.13,9.71,The Republic of China,.tw,TW,TWN,Asia
+Switzerland,Full democracy,8.83,9.58,8.57,7.78,9.38,8.82,The Swiss Confederation,.ch,CH,CHE,Europe
+Luxembourg,Full democracy,8.68,10.0,8.57,6.67,8.75,9.71,The Grand Duchy of Luxembourg,.lu,LU,LUX,Europe
+Germany,Full democracy,8.67,9.58,8.21,8.33,8.13,9.12,The Federal Republic of Germany,.de,DE,DEU,Europe
+Uruguay,Full democracy,8.61,10.0,8.57,6.67,8.13,9.71,The Oriental Republic of Uruguay,.uy,UY,URY,Americas
+United Kingdom,Full democracy,8.54,10.0,7.5,8.89,7.5,8.82,The United Kingdom of Great Britain and Northern Ireland,.uk,GB,GBR,Europe
+Chile,Full democracy,8.28,9.58,8.21,6.67,8.13,8.82,The Republic of Chile,.cl,CL,CHL,Americas
+Austria,Full democracy,8.16,9.58,7.5,8.33,6.88,8.53,The Republic of Austria,.at,AT,AUT,Europe
+Costa Rica,Full democracy,8.16,9.58,6.79,7.22,7.5,9.71,The Republic of Costa Rica,.cr,CR,CRI,Americas
+Mauritius,Full democracy,8.14,9.17,7.86,6.11,8.75,8.82,The Republic of Mauritius,.mu,MU,MUS,Africa
+Japan,Full democracy,8.13,8.75,8.57,6.67,8.13,8.53,Japan,.jp,JP,JPN,Asia
+Spain,Full democracy,8.12,9.58,7.14,7.22,8.13,8.53,The Kingdom of Spain,.es,ES,ESP,Europe
+South Korea,Full democracy,8.01,9.17,8.21,7.22,7.5,7.94,The Republic of Korea,.kr,KR,KOR,Asia
+France,Flawed democracy,7.99,9.58,7.5,7.78,6.88,8.24,The French Republic,.fr,FR,FRA,Europe
+United States,Flawed democracy,7.92,9.17,6.79,8.89,6.25,8.53,The United States of America,.us,US,USA,Americas
+Portugal,Flawed democracy,7.9,9.58,7.5,6.11,7.5,8.82,The Portuguese Republic,.pt,PT,PRT,Europe
+Estonia,Flawed democracy,7.84,9.58,7.86,6.67,6.88,8.24,The Republic of Estonia,.ee,EE,EST,Europe
+Israel,Flawed democracy,7.84,9.17,7.5,9.44,7.5,5.59,The State of Israel,.il,IL,ISR,Asia
+Italy,Flawed democracy,7.74,9.58,6.43,7.22,7.5,7.94,The Italian Republic,.it,IT,ITA,Europe
+Malta,Flawed democracy,7.68,9.17,6.79,6.11,8.13,8.24,The Republic of Malta,.mt,MT,MLT,Europe
+Czech Republic,Flawed democracy,7.67,9.58,6.07,6.67,7.5,8.53,The Czech Republic,.cz,CZ,CZE,Europe
+Cape Verde,Flawed democracy,7.65,9.17,7.0,6.67,6.88,8.53,The Republic of Cabo Verde,.cv,CV,CPV,Africa
+Botswana,Flawed democracy,7.62,9.17,6.79,6.11,7.5,8.53,The Republic of Botswana,.bw,BW,BWA,Africa
+Cyprus,Flawed democracy,7.56,9.17,5.36,7.22,7.5,8.53,The Republic of Cyprus,.cy,CY,CYP,Asia
+Slovenia,Flawed democracy,7.54,9.58,6.43,7.22,6.25,8.24,The Republic of Slovenia,.si,SI,SVN,Europe
+Belgium,Flawed democracy,7.51,9.58,7.86,5.0,6.88,8.24,The Kingdom of Belgium,.be,BE,BEL,Europe
+Greece,Flawed democracy,7.39,9.58,5.21,6.11,7.5,8.53,The Hellenic Republic,.gr,GR,GRC,Europe
+Latvia,Flawed democracy,7.24,9.58,6.07,6.67,5.63,8.24,The Republic of Latvia,.lv,LV,LVA,Europe
+Malaysia,Flawed democracy,7.19,9.58,7.86,6.67,6.25,5.59,Malaysia,.my,MY,MYS,Asia
+Panama,Flawed democracy,7.18,9.58,6.43,7.22,5.0,7.65,The Republic of Panamá,.pa,PA,PAN,Americas
+Trinidad and Tobago,Flawed democracy,7.16,9.58,7.14,6.11,5.63,7.35,The Republic of Trinidad and Tobago,.tt,TT,TTO,Americas
+Jamaica,Flawed democracy,7.13,8.75,7.14,5.0,6.25,8.53,Jamaica,.jm,JM,JAM,Americas
+Lithuania,Flawed democracy,7.13,9.58,6.07,5.56,5.63,8.82,The Republic of Lithuania,.lt,LT,LTU,Europe
+Timor-Leste,Flawed democracy,7.06,9.58,5.93,5.56,6.88,7.35,The Democratic Republic of Timor-Leste,.tl,TL,TLS,Asia
+South Africa,Flawed democracy,7.05,7.42,7.14,8.33,5.0,7.35,The Republic of South Africa,.za,ZA,ZAF,Africa
+Colombia,Flawed democracy,7.04,9.17,6.43,6.67,5.0,7.94,The Republic of Colombia,.co,CO,COL,Americas
+Slovakia,Flawed democracy,6.97,9.58,6.43,5.56,5.63,7.65,The Slovak Republic,.sk,SK,SVK,Europe
+Argentina,Flawed democracy,6.95,9.17,5.36,6.67,5.63,7.94,The Argentine Republic,.ar,AR,ARG,Americas
+Brazil,Flawed democracy,6.92,9.58,5.36,6.11,5.63,7.94,The Federative Republic of Brazil,.br,BR,BRA,Americas
+Poland,Flawed democracy,6.85,9.17,5.71,6.67,5.63,7.06,The Republic of Poland,.pl,PL,POL,Europe
+Suriname,Flawed democracy,6.82,9.58,6.07,6.11,5.0,7.35,The Republic of Suriname,.sr,SR,SUR,Americas
+Bulgaria,Flawed democracy,6.71,9.17,5.71,7.22,4.38,7.06,The Republic of Bulgaria,.bg,BG,BGR,Europe
+India,Flawed democracy,6.61,8.67,7.14,6.67,5.0,5.59,The Republic of India,.in,IN,IND,Asia
+Tunisia,Flawed democracy,6.59,9.17,5.36,7.22,5.63,5.59,The Republic of Tunisia,.tn,TN,TUN,Africa
+Philippines,Flawed democracy,6.56,9.17,5.0,7.78,4.38,6.47,The Republic of the Philippines,.ph,PH,PHL,Asia
+Hungary,Flawed democracy,6.56,8.33,6.43,5.0,6.25,6.76,Hungary,.hu,HU,HUN,Europe
+Peru,Flawed democracy,6.53,8.75,5.36,5.56,5.63,7.35,The Republic of Perú,.pe,PE,PER,Americas
+Namibia,Flawed democracy,6.52,7.0,5.36,6.67,5.63,7.94,The Republic of Namibia,.na,,NAM,Africa
+Croatia,Flawed democracy,6.5,9.17,6.07,6.11,4.38,6.76,The Republic of Croatia,.hr,HR,HRV,Europe
+Ghana,Flawed democracy,6.5,8.33,5.36,6.67,6.25,5.88,The Republic of Ghana,.gh,GH,GHA,Africa
+Mongolia,Flawed democracy,6.48,8.75,5.71,5.56,5.63,6.76,Mongolia,.mn,MN,MNG,Asia
+Romania,Flawed democracy,6.4,9.17,5.36,6.67,3.75,7.06,Romania,.ro,RO,ROU,Europe
+Dominican Republic,Flawed democracy,6.32,9.17,4.29,6.11,5.0,7.06,The Dominican Republic,.do,DO,DOM,Americas
+Lesotho,Flawed democracy,6.3,9.17,4.14,6.11,5.63,6.47,The Kingdom of Lesotho,.ls,LS,LSO,Africa
+Indonesia,Flawed democracy,6.3,7.92,7.5,6.11,4.38,5.59,The Republic of Indonesia,.id,ID,IDN,Asia
+Serbia,Flawed democracy,6.22,8.25,5.36,6.67,3.75,7.06,The Republic of Serbia,.rs,RS,SRB,Europe
+Paraguay,Flawed democracy,6.18,8.75,5.71,5.0,4.38,7.06,The Republic of Paraguay,.py,PY,PRY,Americas
+Sri Lanka,Flawed democracy,6.14,7.0,5.71,5.56,6.25,6.18,The Democratic Socialist Republic of Sri Lanka,.lk,LK,LKA,Asia
+Ecuador,Flawed democracy,6.13,8.75,5.0,6.67,3.75,6.47,The Republic of Ecuador,.ec,EC,ECU,Americas
+Papua New Guinea,Flawed democracy,6.1,6.92,6.07,3.33,6.25,7.94,The Independent State of Papua New Guinea,.pg,PG,PNG,Oceania
+Albania,Flawed democracy,6.08,7.0,5.36,4.44,6.25,7.35,The Republic of Albania,.al,AL,ALB,Europe
+Mexico,Flawed democracy,6.07,7.83,5.71,7.78,3.13,5.88,The United Mexican States,.mx,MX,MEX,Americas
+Thailand,Flawed democracy,6.04,7.0,5.0,6.67,6.25,5.29,The Kingdom of Thailand,.th,TH,THA,Asia
+Singapore,Flawed democracy,6.03,4.83,7.86,4.44,6.25,6.76,The Republic of Singapore,.sg,SG,SGP,Asia
+Guyana,Flawed democracy,6.01,6.5,5.36,6.11,5.0,7.06,The Co-operative Republic of Guyana,.gy,GY,GUY,Americas
+Bangladesh,Hybrid regime,5.99,7.42,6.07,6.11,5.63,4.71,The People's Republic of Bangladesh,.bd,BD,BGD,Asia
+El Salvador,Hybrid regime,5.9,9.17,4.29,6.11,3.75,6.18,The Republic of El Salvador,.sv,SV,SLV,Americas
+North Macedonia,Hybrid regime,5.89,7.42,5.71,6.11,3.13,7.06,The Republic of North Macedonia[12],.mk,MK,MKD,Europe
+Ukraine,Hybrid regime,5.81,8.25,2.71,7.22,5.0,5.88,Ukraine,.ua,UA,UKR,Europe
+Moldova,Hybrid regime,5.78,7.0,4.64,6.11,4.38,6.76,The Republic of Moldova,.md,MD,MDA,Europe
+Montenegro,Hybrid regime,5.77,7.42,5.71,6.11,3.13,6.47,Montenegro,.me,ME,MNE,Europe
+Malawi,Hybrid regime,5.74,7.0,4.29,5.0,6.25,6.18,The Republic of Malawi,.mw,MW,MWI,Africa
+Fiji,Hybrid regime,5.72,6.58,5.0,6.11,5.63,5.29,The Republic of Fiji,.fj,FJ,FJI,Oceania
+Bhutan,Hybrid regime,5.71,8.75,6.79,3.33,5.0,4.71,The Kingdom of Bhutan,.bt,BT,BTN,Asia
+Madagascar,Hybrid regime,5.7,7.92,3.57,6.67,5.63,4.71,The Republic of Madagascar,.mg,MG,MDG,Africa
+Senegal,Hybrid regime,5.67,6.08,5.71,4.44,6.25,5.88,The Republic of Senegal,.sn,SN,SEN,Africa
+Hong Kong,Hybrid regime,5.57,3.17,3.64,5.0,7.5,8.53,The Hong Kong Special Administrative Region of China[10],.hk,HK,HKG,Asia
+Honduras,Hybrid regime,5.36,7.83,4.29,4.44,4.38,5.88,The Republic of Honduras,.hn,HN,HND,Americas
+Armenia,Hybrid regime,5.35,7.5,5.0,6.11,3.13,5.0,The Republic of Armenia,.am,AM,ARM,Asia
+Liberia,Hybrid regime,5.32,7.42,2.71,5.56,5.63,5.29,The Republic of Liberia,.lr,LR,LBR,Africa
+Georgia,Hybrid regime,5.31,7.83,3.57,6.11,3.75,5.29,Georgia,.ge,GE,GEO,Asia
+Nepal,Hybrid regime,5.22,4.83,5.36,5.0,5.63,5.29,The Federal Democratic Republic of Nepal,.np,NP,NPL,Asia
+Tanzania,Hybrid regime,5.1,4.83,5.0,5.0,6.25,4.41,The United Republic of Tanzania,.tz,TZ,TZA,Africa
+Bolivia,Hybrid regime,5.08,6.08,3.57,6.11,3.75,5.88,The Plurinational State of Bolivia,.bo,BO,BOL,Americas
+Kenya,Hybrid regime,5.05,3.5,5.36,6.67,5.63,4.12,The Republic of Kenya,.ke,KE,KEN,Africa
+Morocco,Hybrid regime,5.04,5.25,4.64,5.56,5.63,4.12,The Kingdom of Morocco,.ma,MA,MAR,Africa
+Guatemala,Hybrid regime,4.97,6.92,3.93,5.0,3.13,5.88,The Republic of Guatemala,.gt,GT,GTM,Americas
+Uganda,Hybrid regime,4.94,4.33,3.21,5.0,6.88,5.29,The Republic of Uganda,.ug,UG,UGA,Africa
+Zambia,Hybrid regime,4.86,4.75,2.93,3.89,6.88,5.88,The Republic of Zambia,.zm,ZM,ZMB,Africa
+Sierra Leone,Hybrid regime,4.86,6.58,2.86,3.33,6.25,5.29,The Republic of Sierra Leone,.sl,SL,SLE,Africa
+Bosnia and Herzegovina,Hybrid regime,4.84,7.0,2.93,5.56,3.13,5.59,Bosnia and Herzegovina,.ba,BA,BIH,Europe
+Benin,Hybrid regime,4.58,3.33,5.36,3.89,5.63,4.71,The Republic of Benin,.bj,BJ,BEN,Africa
+Gambia,Hybrid regime,4.49,4.0,4.29,4.44,5.63,4.12,The Republic of The Gambia,.gm,GM,GMB,Africa
+Turkey,Hybrid regime,4.48,3.5,5.36,5.56,5.63,2.35,The Republic of Turkey,.tr,TR,TUR,Asia
+Pakistan,Hybrid regime,4.31,5.67,5.36,3.33,2.5,4.71,The Islamic Republic of Pakistan,.pk,PK,PAK,Asia
+Haiti,Hybrid regime,4.22,4.75,1.71,2.78,6.25,5.59,The Republic of Haiti,.ht,HT,HTI,Americas
+Kyrgyzstan,Hybrid regime,4.21,4.75,2.93,5.56,3.13,4.71,The Kyrgyz Republic,.kg,KG,KGZ,Asia
+Lebanon,Hybrid regime,4.16,3.5,1.5,6.67,5.0,4.12,The Lebanese Republic,.lb,LB,LBN,Asia
+Ivory Coast,Hybrid regime,4.11,4.33,2.86,3.89,5.63,3.82,The Republic of Côte d'Ivoire,.ci,CI,CIV,Africa
+Nigeria,Hybrid regime,4.1,5.17,3.57,3.89,3.75,4.12,The Federal Republic of Nigeria,.ng,NG,NGA,Africa
+Mali,Authoritarian,3.93,5.17,0.0,4.44,5.63,4.41,The Republic of Mali,.ml,ML,MLI,Africa
+Mauritania,Authoritarian,3.92,3.5,3.57,5.0,3.13,4.41,The Islamic Republic of Mauritania,.mr,MR,MRT,Africa
+Palestine,Authoritarian,3.83,3.33,0.14,7.78,4.38,3.53,The State of Palestine,.ps,PS,PSE,Asia
+Kuwait,Authoritarian,3.8,3.58,3.93,3.89,4.38,3.24,The State of Kuwait,.kw,KW,KWT,Asia
+Algeria,Authoritarian,3.77,3.08,2.5,4.44,5.0,3.82,The People's Democratic Republic of Algeria,.dz,DZ,DZA,Africa
+Burkina Faso,Authoritarian,3.73,3.0,2.36,4.44,5.0,3.82,Burkina Faso,.bf,BF,BFA,Africa
+Angola,Authoritarian,3.66,2.25,2.86,5.56,5.0,2.65,The Republic of Angola,.ao,AO,AGO,Africa
+Iraq,Authoritarian,3.62,5.25,0.0,6.67,5.0,1.18,The Republic of Iraq,.iq,IQ,IRQ,Asia
+Jordan,Authoritarian,3.62,2.67,3.93,3.89,4.38,3.24,The Hashemite Kingdom of Jordan,.jo,JO,JOR,Asia
+Nicaragua,Authoritarian,3.6,0.42,2.86,5.0,5.63,4.12,The Republic of Nicaragua,.ni,NI,NIC,Americas
+Gabon,Authoritarian,3.54,2.58,1.86,4.44,5.0,3.82,The Gabonese Republic,.ga,GA,GAB,Africa
+Mozambique,Authoritarian,3.51,2.58,1.43,5.0,5.0,3.53,The Republic of Mozambique,.mz,MZ,MOZ,Africa
+Ethiopia,Authoritarian,3.38,0.42,3.57,5.56,5.0,2.35,The Federal Democratic Republic of Ethiopia,.et,ET,ETH,Africa
+Russia,Authoritarian,3.31,2.17,2.14,5.0,3.13,4.12,The Russian Federation,.ru,RU,RUS,Europe
+Niger,Authoritarian,3.29,2.92,1.14,3.33,4.38,4.71,The Republic of the Niger,.ne,NE,NER,Africa
+Qatar,Authoritarian,3.24,0.0,4.29,2.78,5.63,3.53,The State of Qatar,.qa,QA,QAT,Asia
+Zimbabwe,Authoritarian,3.16,0.0,2.5,4.44,5.63,3.24,The Republic of Zimbabwe,.zw,ZW,ZWE,Africa
+Kazakhstan,Authoritarian,3.14,0.5,3.21,5.0,3.75,3.24,The Republic of Kazakhstan,.kz,KZ,KAZ,Asia
+Republic of the Congo,Authoritarian,3.11,2.17,2.5,3.89,3.75,3.24,The Republic of the Congo,.cg,CG,COG,Africa
+Cambodia,Authoritarian,3.1,0.0,3.93,3.89,5.63,2.06,The Kingdom of Cambodia,.kh,KH,KHM,Asia
+Rwanda,Authoritarian,3.1,1.42,4.29,2.78,4.38,2.65,The Republic of Rwanda,.rw,RW,RWA,Africa
+Comoros,Authoritarian,3.09,2.08,2.21,3.89,3.75,3.53,The Union of the Comoros,.km,KM,COM,Africa
+Eswatini,Authoritarian,3.08,0.92,2.86,2.78,5.63,3.24,The Kingdom of Eswatini,.sz,SZ,SWZ,Africa
+Guinea,Authoritarian,3.08,3.5,0.43,4.44,4.38,2.65,The Republic of Guinea,.gn,GN,GIN,Africa
+Myanmar,Authoritarian,3.04,1.75,3.93,2.78,4.38,2.35,The Republic of the Union of Myanmar,.mm,MM,MMR,Asia
+Oman,Authoritarian,3.0,0.08,3.93,2.78,4.38,3.82,The Sultanate of Oman,.om,OM,OMN,Asia
+Vietnam,Authoritarian,2.94,0.0,2.86,3.89,5.63,2.35,The Socialist Republic of Viet Nam,.vn,VN,VNM,Asia
+Egypt,Authoritarian,2.93,1.33,3.21,3.33,5.0,1.76,The Arab Republic of Egypt,.eg,EG,EGY,Africa
+Afghanistan,Authoritarian,2.85,3.42,0.64,3.89,2.5,3.82,The Islamic Republic of Afghanistan,.af,AF,AFG,Asia
+Cuba,Authoritarian,2.84,0.0,3.57,3.33,4.38,2.94,The Republic of Cuba,.cu,CU,CUB,Americas
+Togo,Authoritarian,2.8,3.17,1.79,3.33,5.0,3.24,The Togolese Republic,.tg,TG,TGO,Africa
+Cameroon,Authoritarian,2.77,1.67,2.14,3.33,4.38,2.35,The Republic of Cameroon,.cm,CM,CMR,Africa
+Venezuela,Authoritarian,2.76,0.0,1.79,5.0,4.38,2.65,The Bolivarian Republic of Venezuela,.ve,VE,VEN,Americas
+Djibouti,Authoritarian,2.71,0.42,1.29,3.89,5.63,2.35,The Republic of Djibouti,.dj,DJ,DJI,Africa
+United Arab Emirates,Authoritarian,2.7,0.0,3.93,2.22,5.0,2.65,The United Arab Emirates,.ae,AE,ARE,Asia
+Azerbaijan,Authoritarian,2.68,0.5,2.86,3.33,3.75,2.94,The Republic of Azerbaijan,.az,AZ,AZE,Asia
+Guinea-Bissau,Authoritarian,2.63,4.92,0.0,2.78,3.13,2.35,The Republic of Guinea-Bissau,.gw,GW,GNB,Africa
+Belarus,Authoritarian,2.59,0.0,2.0,3.89,5.0,2.06,The Republic of Belarus,.by,BY,BLR,Europe
+Sudan,Authoritarian,2.54,0.0,1.79,4.44,5.0,1.47,The Republic of the Sudan,.sd,SD,SDN,Africa
+Bahrain,Authoritarian,2.49,0.83,2.71,2.78,4.38,1.76,The Kingdom of Bahrain,.bh,BH,BHR,Asia
+China,Authoritarian,2.27,0.0,4.29,2.78,3.13,1.18,The People's Republic of China,.cn,CN,CHN,Asia
+Iran,Authoritarian,2.2,0.0,2.5,3.89,3.13,1.47,The Islamic Republic of Iran,.ir,IR,IRN,Asia
+Eritrea,Authoritarian,2.15,0.0,2.14,0.56,6.88,1.18,The State of Eritrea,.er,ER,ERI,Africa
+Burundi,Authoritarian,2.14,0.0,0.0,3.33,5.0,2.35,The Republic of Burundi,.bi,BI,BDI,Africa
+Uzbekistan,Authoritarian,2.12,0.08,1.86,2.78,5.0,0.88,The Republic of Uzbekistan,.uz,UZ,UZB,Asia
+Saudi Arabia,Authoritarian,2.08,0.0,3.57,2.22,3.13,1.47,The Kingdom of Saudi Arabia,.sa,SA,SAU,Asia
+Libya,Authoritarian,1.95,0.0,0.0,3.33,3.75,2.65,The State of Libya,.ly,LY,LBY,Africa
+Yemen,Authoritarian,1.95,0.0,0.0,3.89,5.0,0.88,The Republic of Yemen,.ye,YE,YEM,Asia
+Tajikistan,Authoritarian,1.94,0.0,2.21,2.22,4.38,0.88,The Republic of Tajikistan,.tj,TJ,TJK,Asia
+Equatorial Guinea,Authoritarian,1.92,0.0,0.43,3.33,4.38,1.47,The Republic of Equatorial Guinea,.gq,GQ,GNQ,Africa
+Laos,Authoritarian,1.77,0.0,2.86,1.67,3.75,0.59,The Lao People's Democratic Republic,.la,LA,LAO,Asia
+Turkmenistan,Authoritarian,1.72,0.0,0.79,2.22,5.0,0.59,Turkmenistan,.tm,TM,TKM,Asia
+Chad,Authoritarian,1.55,0.0,0.0,1.67,3.75,2.35,The Republic of Chad,.td,TD,TCD,Africa
+Syria,Authoritarian,1.43,0.0,0.0,2.78,4.38,0.0,The Syrian Arab Republic,.sy,SY,SYR,Asia
+Central African Republic,Authoritarian,1.32,1.25,0.0,1.11,1.88,2.35,The Central African Republic,.cf,CF,CAF,Africa
+Democratic Republic of the Congo,Authoritarian,1.13,0.0,0.0,1.67,3.13,0.88,The Democratic Republic of the Congo,.cd,CD,COD,Africa
+North Korea,Authoritarian,1.08,0.0,2.5,1.67,1.25,0.0,The Democratic People's Republic of Korea,.kp,KP,PRK,Asia
