@@ -1,211 +1,138 @@
-Country,EnergyOutput(GWH)
-World,26823200
-China,7779100
-United States,4286600
-India,1560900
-Russia,1085400
-Japan,1004800
-Canada,643900
-Brazil,620100
-South Korea,574000
-Germany,571900
-France,524900
-Saudi Arabia,340900
-Iran,331600
-Mexico,313200
-UK,312800
-Turkey,305400
-Italy,282700
-Taiwan,279800
-Indonesia,275200
-Australia,265200
-Spain,255800
-South Africa,239500
-Vietnam,243500
-Egypt,198600
-Thailand,176400
-Sweden,169200
-Malaysia,159600
-Poland,157800
-Norway,154500
-Ukraine,149000
-Argentina,142500
-UAE,138400
-Pakistan,137800
-Iraq,131300
-Netherlands,122400
-Kazakhstan,109200
-Philippines,101800
-Belgium,90400
-Bangladesh,89100
-Chile,84300
-Czech Republic,81400
-Algeria,78800
-Colombia,75000
-Kuwait,74900
-Israel,74300
-Austria,71700
-Switzerland,70400
-Finland,68800
-Uzbekistan,65000
-Venezuela,58400
-Romania,56200
-Portugal,54100
-Singapore,53100
-Peru,52700
-Qatar,50500
-Paraguay,48900
-New Zealand,44200
-Greece,42600
-Bulgaria,40900
-Oman,38900
-Belarus,38700
-Morocco,38200
-Serbia,35033
-Hong Kong,35200
-Hungary,34600
-Ireland,32500
-Ecuador,32000
-Libya,31696
-Bahrain,31444
-Laos,29973
-Nigeria,29324
-Slovakia,28400
-Denmark,28100
-Turkmenistan,26600
-Burma,24881
-Azerbaijan,22800
-Tunisia,20537
-Tajikistan,20393
-Lebanon,20034
-Cuba,19526
-Puerto Rico,19523
-Jordan,19474
-Iceland,19300
-Ghana,18906
-Dominican Republic,18909
-Mozambique,17987
-Bosnia and Herzegovina,17210
-Syria,17105
-Slovenia,17100
-Sri Lanka,16900
-North Korea,16076
-Zambia,15982
-Uruguay,15802
-Kyrgyzstan,14840
-Sudan[3],14281
-Ethiopia,14152
-Croatia,13400
-Panama,12467
-Guatemala,12203
-Costa Rica,11662
-Zimbabwe,11311
-Georgia,10992
-Kenya,10706
-Côte d'Ivoire,9603
-"Congo, Democratic Republic of the",9207
-Trinidad and Tobago,9000
-Armenia,7329
-Bhutan,6976
-Bolivia,6835
-Honduras,6712
-Estonia,6400
-El Salvador,5992
-Kosovo,5906
-Cameroon,5857
-Yemen,5834
-Mongolia,5802
-Latvia,5700
-Angola,5512
-Moldova,5456
-North Macedonia,5300
-Tanzania,5115
-Cyprus,4900
-Jamaica,4745
-Albania,4525
-Lithuania,4200
-Senegal,3921
-Nicaragua,3522
-Brunei,3500
-Papua New Guinea,3325
-Nepal,3279
-Montenegro,3141
-Reunion,2841
-Mauritius,2627
-Uganda,2493
-New Caledonia,2430
-Luxembourg,2300
-Malta,2250
-Bahamas,2190
-Malawi,2069
-Guam,1734
-Gabon,1702
-Martinique,1702
-Guadeloupe,1650
-Suriname,1600
-Namibia,1585
-Madagascar,1340
-Netherlands Antilles,1287
-"Congo, Republic of the",1255
-Barbados,1002
-U.S. Virgin Islands,996
-Cambodia,991
-Aruba,980
-Guinea,950
-Mauritania,930
-French Guiana,885
-Fiji,836
-Afghanistan,833
-Macau,833
-French Polynesia,825
-Botswana,3449
-Guyana,725
-Lesotho,700
-Bermuda,674
-Haiti,652
-Cayman Islands,594
-Burkina Faso,579
-Greenland,538
-Palestine,535
-Rwanda,525
-Mali,520
-Equatorial Guinea,500
-Niger,495
-Belize,452
-Eritrea,416
-Djibouti,406
-Maldives,402
-Eswatini,381
-Saint Lucia,369
-Somalia,339
-Benin,335
-Antigua and Barbuda,331
-Faroe Islands,306
-Gambia,304
-Burundi,304
-Liberia,300
-Sierra Leone,300
-Gibraltar,239
-Turks and Caicos Islands,235
-Togo,233
-Chad,224
-Saint Kitts and Nevis,208
-Grenada,202
-Micronesia,192
-Central African Republic,171
-American Samoa,169
-Saint Vincent and the Grenadines,157
-Samoa,132
-Dominica,111
-Solomon Islands,103
-Western Sahara,85
-Sao Tome and Principe,66
-Tonga,52
-Saint Pierre and Miquelon,46
-Comoros,42
-Guinea-Bissau,39
-Kiribati,29
-Montserrat,24
-Falkland Islands,19
-Saint Helena,7
-Niue,3
+Country,EnergyConsumptionPerCapita(Watts)
+Afghanistan[4],
+Albania,1065.9
+Algeria,1658.9
+Angola,871.9
+Argentina,2522.5
+Armenia,1290.5
+Australia,7437.7
+Austria,5216.2
+Azerbaijan,1962.5
+Bahrain,13542.6
+Bangladesh,286.9
+Belarus,3836.4
+Belgium,6708.9
+Benin,523.8
+Bolivia,1045.8
+Bosnia and Herzegovina,2247.4
+Botswana,1462.4
+Brazil,1914.3
+Brunei Darussalam,9842.9
+Bulgaria,3098.7
+Cambodia,527.5
+Cameroon,440.3
+Canada,9589.0
+Chile,2930.6
+China,2964.1
+Colombia,890.0
+"Congo, Dem. Rep.",389.1
+"Congo, Rep.",740.0
+Costa Rica,1370.0
+Cote d'Ivoire,805.9
+Croatia,2415.1
+Cuba,1372.5
+Cyprus,2251.5
+Czech Republic,5312.2
+Denmark,4136.9
+Dominican Republic,973.7
+Ecuador,1304.4
+Egypt,1178.3
+El Salvador,923.3
+Eritrea,
+Estonia,6155.4
+Ethiopia,675.0
+Finland,8087.9
+France,5112.4
+Gabon,1910.4
+Georgia,1374.2
+Germany,5149.4
+Ghana,457.5
+Greece,2841.3
+Guatemala,1022
+Haiti,523.5
+Honduras,882
+Hong Kong,2580.7
+Hungary,3036.1
+Iceland,24201.2
+India,806.9
+Indonesia,1132
+"Iran, Islamic Rep.",3941.5
+Iraq,1952.6
+Ireland,3781.4
+Israel,3955.3
+Italy,3434.3
+Jamaica,1442.7
+Japan,4753.7
+Jordan,1426
+Kazakhstan,6373
+Kenya,654.7
+North Korea,773
+South Korea,6994.5
+Kosovo[5],1726.4
+Kuwait,12991.1
+Kyrgyzstan,919.2
+Latvia,2874.8
+Lebanon,1780.3
+Libya,3609.8
+Lithuania,3137.6
+Luxembourg,9732.9
+Macedonia,1796.7
+Malaysia,4020.6
+Malta,4020.6
+Mexico,2058
+Moldova,1148.5
+Mongolia,2431.7
+Montenegro,2198.5
+Morocco,751.4
+Mozambique,542.4
+Myanmar,416.4
+Namibia,988.4
+Nepal,492.2
+Netherlands,6131.7
+New Zealand,5846.9
+Nicaragua,790.4
+Nigeria,1029.2
+Norway,8572.6
+Oman,8297.9
+Pakistan,632.2
+Panama,1407.9
+Paraguay,1017.4
+Peru,943.1
+Philippines,608.6
+Poland,3415.6
+Portugal,2773.1
+Qatar,25456.8
+Romania,2119.8
+Russia,6780.9
+Saudi Arabia,8472.2
+Senegal,347.5
+Serbia,2767.3
+Singapore,6435.2
+Slovakia,4231.6
+Slovenia,4424.6
+South Africa,3536
+Spain,3333.6
+Sri Lanka,649.1
+Sudan,499
+Sweden,6832.1
+Switzerland,4399
+Syrian Arab Republic,889.6
+Tajikistan,403.1
+Tanzania,625.4
+Thailand,2646.3
+Togo,615.9
+Trinidad and Tobago,19355.3
+Tunisia,1273.5
+Turkey,2034.6
+Turkmenistan,6672.5
+Ukraine,3399.3
+United Arab Emirates,10239.8
+United Kingdom,3964.5
+United States,9207.8
+Uruguay,1798.1
+Uzbekistan,1889.9
+Venezuela,3023.9
+Vietnam,888.9
+Yemen,431
+Zambia,840.7
+Zimbabwe,1008.6
