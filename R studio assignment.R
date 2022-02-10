@@ -1,9 +1,9 @@
-link='https://github.com/jsalber/542/raw/main/First%20Assignment/allData.csv'
+link='https://github.com/jsalber/542/raw/main/First%20Assignment/Final%20Data/FinalData.csv'
 myFile=url(link)
 fromPy=read.csv(file = myFile)
 row.names(fromPy)=NULL
 str(fromPy)
-selection=c("Country","PerCapitaEmissions", "GDP.US.Million.","EnergyConsumptionPerCapita.Watts.")
+selection=c("Country","PerCapitaEmissions", "PerCapitaGDP.Thousands.","KilowattsPerCapita")
 
 dataToCluster=fromPy[,selection]
 row.names(dataToCluster)=dataToCluster$Country
@@ -28,3 +28,160 @@ fviz_nbclust(dataToCluster,
              k.max = 10,
              verbose = F,
              hc_func = "agnes")
+fviz_nbclust(dataToCluster, 
+             hcut,
+             diss=dataToCluster_DM,
+             method = "gap_stat",
+             k.max = 10,
+             verbose = F,
+             hc_func = "diana")
+
+
+NumberOfClusterDesired=4
+
+# Partitioning technique
+res.pam = pam(x=dataToCluster_DM,
+              k = NumberOfClusterDesired,
+              cluster.only = F)
+
+# Hierarchical technique- agglomerative approach
+
+#library(factoextra)
+res.agnes= hcut(dataToCluster_DM, 
+                k = NumberOfClusterDesired,
+                isdiss=TRUE,
+                hc_func='agnes',
+                hc_method = "ward.D2")
+
+# Hierarchical technique- divisive approach
+res.diana= hcut(dataToCluster_DM, 
+                k = NumberOfClusterDesired,
+                isdiss=TRUE,
+                hc_func='diana',
+                hc_method = "ward.D2")
+
+
+fromPy$pam=as.factor(res.pam$clustering)
+fromPy$agn=as.factor(res.agnes$cluster)
+fromPy$dia=as.factor(res.diana$cluster)
+
+aggregate(data=fromPy,
+         HDI~pam,
+          FUN=mean)
+
+aggregate(data=fromPy,
+          HDI~agn,
+          FUN=mean)
+
+aggregate(data=fromPy,
+          HDI~dia,
+          FUN=mean)
+
+library(dplyr)
+
+fromPy$pam=dplyr::recode_factor(fromPy$pam, 
+                                `1` = '4',`2`='3',`3`='2',`4`='1')
+fromPy$agn=dplyr::recode_factor(fromPy$agn, 
+                                `1` = '4',`2`='3',`3`='2',`4`='1')
+fromPy$dia=dplyr::recode_factor(fromPy$dia, 
+                                `1` = '4',`2`='3',`3`='2',`4`='1')
+fviz_silhouette(res.pam)
+
+fviz_silhouette(res.agnes)
+
+library(factoextra)
+fviz_silhouette(res.diana)
+
+head(data.frame(res.pam$silinfo$widths),10)
+
+pamEval=data.frame(res.pam$silinfo$widths)
+agnEval=data.frame(res.agnes$silinfo$widths)
+diaEval=data.frame(res.diana$silinfo$widths)
+
+pamPoor=rownames(pamEval[pamEval$sil_width<0,])
+agnPoor=rownames(agnEval[agnEval$sil_width<0,])
+diaPoor=rownames(diaEval[diaEval$sil_width<0,])
+
+library("qpcR") 
+
+
+bap_Clus=as.data.frame(qpcR:::cbind.na(sort(pamPoor), sort(agnPoor),sort(diaPoor)))
+names(bap_Clus)=c("pam","agn","dia")
+bap_Clus
+
+projectedData = cmdscale(dataToCluster_DM, k=2)
+
+#
+# save coordinates to original data frame:
+fromPy$dim1 = projectedData[,1]
+fromPy$dim2 = projectedData[,2]
+
+# see some:
+
+fromPy[,c('dim1','dim2')][1:10,]
+
+base= ggplot(data=fromPy,
+             aes(x=dim1, y=dim2,
+                 label=Country)) 
+base + geom_text(size=2)
+
+pamPlot=base + labs(title = "PAM") + geom_point(size=2,
+                                                aes(color=pam),
+                                                show.legend = T) 
+
+diaPlot=base + labs(title = "DIANA") + geom_point(size=2,
+                                                  aes(color=dia),
+                                                  show.legend = T) 
+                                                  
+agnPlot=base + labs(title = "AGNES") + geom_point(size=2,
+                                                  aes(color=agn),
+                                                  show.legend = T)
+library(ggpubr)
+
+ggarrange(pamPlot, agnPlot, diaPlot,ncol = 3,common.legend = T)
+
+fviz_dend(res.agnes,k=NumberOfClusterDesired, cex = 0.45, horiz = T,main = "AGNES approach")
+
+selection=c("Country","PerCapitaEmissions", "PerCapitaGDP.Thousands.","KilowattsPerCapita","HDI")
+
+dataForFA=fromPy[,selection]
+
+names(dataForFA)
+
+library(lavaan)
+
+model='energymoney=~PerCapitaEmissions + PerCapitaGDP.Thousands.+KilowattsPerCapita+HDI'
+
+fit<-cfa(model, data = dataForFA,std.lv=TRUE)
+indexCFA=lavPredict(fit)
+
+indexCFA[1:10]
+
+
+library(scales)
+indexCFANorm=rescale(as.vector(indexCFA), 
+                     to = c(0, 10))
+indexCFANorm[1:10]
+
+fromPy$demo_FA=indexCFANorm
+
+base=ggplot(data=fromPy,
+            aes(x=demo_FA,y=HDI))
+base+geom_point()
+
+evalCFA1=parameterEstimates(fit, standardized =TRUE)
+
+evalCFA1[evalCFA1$op=="=~",c('rhs','std.all','pvalue')]
+
+evalCFA2=as.list(fitMeasures(fit))
+
+evalCFA2[c("chisq", "df", "pvalue")] 
+
+evalCFA2$tli
+
+evalCFA2[c( 'rmsea.ci.lower','rmsea','rmsea.ci.upper')] 
+
+library(semPlot)
+
+semPaths(fit, what='std', nCharNodes=0, sizeMan=12,
+         edge.label.cex=1.5, fade=T,residuals = F)
