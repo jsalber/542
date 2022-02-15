@@ -1,9 +1,15 @@
+##John Salber
+
+#This is importing my data from python work
 link='https://github.com/jsalber/542/raw/main/First%20Assignment/Final%20Data/FinalData.csv'
 myFile=url(link)
 fromPy=read.csv(file = myFile)
 row.names(fromPy)=NULL
 str(fromPy)
+
+# I only used the per capita data
 selection=c("Country","PerCapitaEmissions", "PerCapitaGDP.Thousands.","KilowattsPerCapita")
+
 
 dataToCluster=fromPy[,selection]
 row.names(dataToCluster)=dataToCluster$Country
@@ -13,6 +19,8 @@ as.data.frame(scale(dataToCluster))
 log(dataToCluster)
 library(factoextra)
 
+#finding out how many clusters to use. I ended up using 4 because it was in the middle
+#between 9 and 2
 set.seed(999)
 library(cluster)
 dataToCluster_DM=daisy(x=dataToCluster, metric = "gower")
@@ -78,6 +86,7 @@ aggregate(data=fromPy,
           FUN=mean)
 
 library(dplyr)
+##Picking the right cluster technique
 
 fromPy$pam=dplyr::recode_factor(fromPy$pam, 
                                 `1` = '4',`2`='3',`3`='2',`4`='1')
@@ -110,6 +119,7 @@ names(bap_Clus)=c("pam","agn","dia")
 bap_Clus
 
 projectedData = cmdscale(dataToCluster_DM, k=2)
+#Going with Agnes because its has the lease negitives and the highest silhouette width
 
 #
 # save coordinates to original data frame:
@@ -150,7 +160,7 @@ names(dataForFA)
 
 library(lavaan)
 
-model='energymoney=~PerCapitaEmissions + PerCapitaGDP.Thousands.+KilowattsPerCapita+HDI'
+model='energymoney=~PerCapitaEmissions + PerCapitaGDP.Thousands.+KilowattsPerCapita'
 
 fit<-cfa(model, data = dataForFA,std.lv=TRUE)
 indexCFA=lavPredict(fit)
