@@ -119,14 +119,13 @@ names(bap_Clus)=c("pam","agn","dia")
 bap_Clus
 
 projectedData = cmdscale(dataToCluster_DM, k=2)
-#Going with Agnes because its has the lease negitives and the highest silhouette width
+#Going with Agnes because its has the least negatives and the highest silhouette width
 
-#
-# save coordinates to original data frame:
+
 fromPy$dim1 = projectedData[,1]
 fromPy$dim2 = projectedData[,2]
 
-# see some:
+
 
 fromPy[,c('dim1','dim2')][1:10,]
 
@@ -152,7 +151,7 @@ ggarrange(pamPlot, agnPlot, diaPlot,ncol = 3,common.legend = T)
 
 fviz_dend(res.agnes,k=NumberOfClusterDesired, cex = 0.45, horiz = T,main = "AGNES approach")
 
-selection=c("Country","PerCapitaEmissions", "PerCapitaGDP.Thousands.","KilowattsPerCapita","HDI")
+selection=c("Country","PerCapitaEmissions", "PerCapitaGDP.Thousands.","KilowattsPerCapita")
 
 dataForFA=fromPy[,selection]
 
@@ -160,6 +159,7 @@ names(dataForFA)
 
 library(lavaan)
 
+#this is my model data. It is all in per capita so that the numbers work together
 model='energymoney=~PerCapitaEmissions + PerCapitaGDP.Thousands.+KilowattsPerCapita'
 
 fit<-cfa(model, data = dataForFA,std.lv=TRUE)
@@ -196,7 +196,8 @@ library(semPlot)
 semPaths(fit, what='std', nCharNodes=0, sizeMan=12,
          edge.label.cex=1.5, fade=T,residuals = F)
 
-hypo1=formula(HDI~ PerCapitaEmissions)
+#picking the right model for my data
+hypo1=formula(HDI~ KilowattsPerCapita)
 
 
 hypo2=formula(HDI~ PerCapitaEmissions+KilowattsPerCapita+PerCapitaGDP.Thousands. )
@@ -209,20 +210,24 @@ gauss2=glm(hypo2,
            data = fromPy,
            family = 'gaussian')
 
-
 summary(gauss1)
 
 summary(gauss2)
 
+#this shows that the second model is better
 anova(gauss1,gauss2,test="Chisq")
+
+
 
 library(rsq)
 rsq(gauss2,adj=T)
+
 
 plot(gauss2,1)
 
 plot(gauss2,2)
 
+#p-value is much below 0.05 so data is not normal
 shapiro.test(gauss2$residuals)
 
 
@@ -230,6 +235,7 @@ plot(gauss2, 3)
 
 library(lmtest)
 
+#P-value is above 0.05 so we can assume homosedasticity
 bptest(gauss2) 
 
 library(car)
@@ -251,7 +257,7 @@ set.seed(123)
 selection = createDataPartition(fromPy$HDI,
                                 p = 0.75,
                                 list = FALSE)
-#
+
 trainGauss = fromPy[ selection, ]
 #
 testGauss  = fromPy[-selection, ]
@@ -259,14 +265,20 @@ testGauss  = fromPy[-selection, ]
 
 ctrl = trainControl(method = 'cv',number = 5)
 
+
 gauss2CV = train(hypo2,
                  data = trainGauss, 
                  method = 'glm',
                  trControl = ctrl)
-
+##there is a moderate amount of correlation
 gauss2CV
 
+
+# this tells us that its an ok predictor since r^2 is above 0.5
+#the data isnt a perfect perdictor but its better than a random guess
 predictedVal<-predict(gauss2CV,testGauss)
 
 postResample(obs = testGauss$HDI,
              pred=predictedVal)
+
+

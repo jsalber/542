@@ -1,0 +1,737 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{R-studio-assignment.R}
+\author{John}
+\date{2022-02-16}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={R-studio-assignment.R},
+  pdfauthor={John},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{link}\OtherTok{=}\StringTok{\textquotesingle{}https://github.com/jsalber/542/raw/main/First\%20Assignment/allData.csv\textquotesingle{}}
+\NormalTok{myFile}\OtherTok{=}\FunctionTok{url}\NormalTok{(link)}
+\NormalTok{fromPy}\OtherTok{=}\FunctionTok{read.csv}\NormalTok{(}\AttributeTok{file =}\NormalTok{ myFile)}
+\FunctionTok{row.names}\NormalTok{(fromPy)}\OtherTok{=}\ConstantTok{NULL}
+\FunctionTok{str}\NormalTok{(fromPy)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    131 obs. of  8 variables:
+##  $ Country                          : chr  "Albania" "Algeria" "Angola" "Argentina" ...
+##  $ X2017CO2Emissions                : num  5.03 159.93 30.88 209.97 4.83 ...
+##  $ PercentofWorldEmissions          : num  0.01 0.43 0.08 0.57 0.01 1.08 0.19 0.09 0.1 0.23 ...
+##  $ PerCapitaEmissions               : num  1.7 3.9 1 4.7 1.6 16.5 8.3 3.3 24 0.5 ...
+##  $ GDP.US.Million.                  : int  5181 3368 1896 8476 4266 55823 48106 4202 19925 2001 ...
+##  $ PerCapitaGDP.Thousands.          : num  5.18 3.37 1.9 8.48 4.27 ...
+##  $ EnergyConsumptionPerCapita.Watts.: num  1066 1659 872 2522 1290 ...
+##  $ KilowattsPerCapita               : num  1.07 1.66 0.87 2.52 1.29 ...
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{selection}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\StringTok{"Country"}\NormalTok{,}\StringTok{"PerCapitaEmissions"}\NormalTok{, }\StringTok{"GDP.US.Million."}\NormalTok{,}\StringTok{"EnergyConsumptionPerCapita.Watts."}\NormalTok{)}
+
+\NormalTok{dataToCluster}\OtherTok{=}\NormalTok{fromPy[,selection]}
+\FunctionTok{row.names}\NormalTok{(dataToCluster)}\OtherTok{=}\NormalTok{dataToCluster}\SpecialCharTok{$}\NormalTok{Country}
+\NormalTok{dataToCluster}\SpecialCharTok{$}\NormalTok{Country}\OtherTok{=}\ConstantTok{NULL}
+\FunctionTok{boxplot}\NormalTok{(dataToCluster,}\AttributeTok{horizontal =}\NormalTok{ T, }\AttributeTok{las=}\DecValTok{2}\NormalTok{,}\AttributeTok{cex.axis=}\DecValTok{2}\NormalTok{)}
+\FunctionTok{as.data.frame}\NormalTok{(}\FunctionTok{scale}\NormalTok{(dataToCluster))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                  PerCapitaEmissions GDP.US.Million.
+## Albania                                 -0.66233725     -0.55084889
+## Algeria                                 -0.30700293     -0.63548837
+## Angola                                  -0.77539817     -0.70420834
+## Argentina                               -0.17779045     -0.39702258
+## Armenia                                 -0.67848881     -0.59356545
+## Australia                                1.72809361      1.81336107
+## Austria                                  0.40366570      1.45309472
+## Azerbaijan                              -0.40391229     -0.59655327
+## Bahrain                                  2.93946059      0.13747131
+## Bangladesh                              -0.85615596     -0.69930644
+## Belarus                                  0.12908918     -0.49501391
+## Belgium                                  0.53287818      1.30939901
+## Benin                                   -0.84000441     -0.73417997
+## Bolivia                                 -0.63003413     -0.64645929
+## Bosnia and Herzegovina                   0.24215010     -0.51098010
+## Botswana                                -0.37160917     -0.47942119
+## Brazil                                  -0.54927633     -0.47540630
+## Brunei                                   1.59888113      0.48816728
+## Bulgaria                                 0.19369542     -0.32316728
+## Cambodia                                -0.82385285     -0.72208861
+## Cameroon                                -0.87230752     -0.72260214
+## Canada                                   1.79269985      1.24086577
+## Chile                                   -0.12933577     -0.17498983
+## China                                    0.30675634     -0.31518418
+## Colombia                                -0.69464037     -0.54375280
+## Congo                                   -0.77539817     -0.70728954
+## Costa Rica                              -0.66233725     -0.22891074
+## Croatia                                 -0.25854825     -0.14221712
+## Cuba                                    -0.50082165     -0.35024444
+## Cyprus                                   0.03217983      0.52065988
+## Czech Republic                           0.72669690      0.27687203
+## Democratic Republic of the Congo        -0.93691376     -0.76910017
+## Denmark                                  0.01602827      2.07731674
+## Dominican Republic                      -0.59773101     -0.45341778
+## Ecuador                                 -0.54927633     -0.53128797
+## Egypt                                   -0.50082165     -0.62423734
+## El Salvador                             -0.74309505     -0.61536723
+## Estonia                                  1.27584993      0.28597556
+## Ethiopia                                -0.92076220     -0.75350746
+## Finland                                  0.43596882      1.48012520
+## FranceÂ Monaco                          -0.09703265      1.02606916
+## Gabon                                   -0.42006385     -0.47577978
+## Georgia                                 -0.45236697     -0.60673055
+## Germany                                  0.62978754      1.35052829
+## Ghana                                   -0.84000441     -0.68973607
+## Greece                                   0.11293762      0.05306526
+## Guatemala                               -0.75924661     -0.59048425
+## Haiti                                   -0.88845908     -0.72923138
+## Honduras                                -0.75924661     -0.68039911
+## Hong Kong                                0.04833139      1.38330100
+## Hungary                                 -0.09703265     -0.03974406
+## Iceland                                  1.03357653      2.17848263
+## India                                   -0.64618569     -0.70257438
+## Indonesia                               -0.63003413     -0.61205262
+## Iran                                     0.40366570     -0.27064692
+## Iraq                                    -0.09703265     -0.59916762
+## Ireland                                  0.38751414      3.23388515
+## Israel                                   0.35521102      1.40304865
+## ItalyÂ San Marino Vatican City           0.04833139      0.66561608
+## Ivory Coast                             -0.85615596     -0.68450737
+## Jamaica                                 -0.51697321     -0.57493823
+## Japan                                    0.74284846      1.07420116
+## Jordan                                  -0.53312477     -0.59277181
+## Kazakhstan                               1.42121397     -0.36737775
+## Kenya                                   -0.87230752     -0.70500199
+## Kuwait                                   2.85870279      0.36547971
+## Kyrgyzstan                              -0.64618569     -0.73735453
+## Latvia                                  -0.27469981      0.04158080
+## Lebanon                                 -0.32315449     -0.35808748
+## Libya                                    0.51672662     -0.59463920
+## Lithuania                               -0.08088109      0.17701331
+## Luxembourg                               1.71194205      4.67789167
+## Malaysia                                 0.38751414     -0.30710772
+## Malta                                   -0.22624513      0.78386859
+## Mexico                                  -0.30700293     -0.40402530
+## Moldova                                 -0.61388257     -0.65481586
+## Mongolia                                 0.41981726     -0.60565680
+## Morocco                                 -0.66233725     -0.64762641
+## Mozambique                              -0.88845908     -0.77176120
+## Myanmar                                 -0.85615596     -0.73240594
+## Namibia                                 -0.66233725     -0.59594637
+## Nepal                                   -0.88845908     -0.73973545
+## Netherlands                              0.72669690      1.69716268
+## New Zealand                              0.32290790      1.26009990
+## Nicaragua                               -0.77539817     -0.70378818
+## Nigeria                                 -0.85615596     -0.69538492
+## North Korea                             -0.69464037     -0.76387148
+## North Macedonia                         -0.30700293     -0.51793613
+## Norway                                   0.67824222      2.32913437
+## Oman                                     1.79269985     -0.21341139
+## Pakistan                                -0.77539817     -0.73824154
+## Panama                                  -0.45236697     -0.21994726
+## Paraguay                                -0.77539817     -0.56163307
+## Peru                                    -0.66233725     -0.50500445
+## Philippines                             -0.72694349     -0.63870962
+## Poland                                   0.41981726     -0.05678400
+## Portugal                                -0.04857797      0.25362301
+## Qatar                                    5.05531493      1.57956376
+## Romania                                 -0.27469981     -0.18913531
+## Russia                                   1.04972809     -0.31812532
+## Saudi Arabia                             2.19648884      0.14610800
+## Senegal                                 -0.84000441     -0.72465627
+## Singapore                                0.61363598      1.92031587
+## Slovakia                                 0.17754386      0.10661268
+## Slovenia                                 0.24215010      0.41067057
+## South Africa                             0.38751414     -0.55491046
+## South Korea                              1.19509213      0.69871558
+## SpainÂ Andorra                           0.04833139      0.48686011
+## Sri Lanka                               -0.75924661     -0.61681446
+## Sweden                                  -0.11318421      1.70841371
+## SwitzerlandÂ Liechtenstein              -0.17779045      3.26507057
+## Syria                                   -0.67848881     -0.75117322
+## Tajikistan                              -0.84000441     -0.75360083
+## Tanzania                                -0.88845908     -0.74066915
+## Thailand                                -0.29085137     -0.45710587
+## Togo                                    -0.87230752     -0.75243371
+## Trinidad and Tobago                      3.52091675     -0.07909932
+## Tunisia                                 -0.50082165     -0.63782261
+## Turkey                                  -0.08088109     -0.39412812
+## Turkmenistan                             1.09818277     -0.46107408
+## Ukraine                                 -0.17779045     -0.62666495
+## United Arab Emirates                     2.55182316      0.90123410
+## United Kingdom                          -0.01627485      1.10818767
+## United States                            1.59888113      2.15415987
+## Uruguay                                 -0.61388257     -0.07200323
+## Uzbekistan                              -0.45236697     -0.71223812
+## Venezuela                               -0.19394201     -0.61812164
+## Vietnam                                 -0.56542789     -0.66265890
+## Yemen                                   -0.87230752     -0.74897904
+## Zambia                                  -0.88845908     -0.74673817
+## Zimbabwe                                -0.82385285     -0.72428279
+##                                  EnergyConsumptionPerCapita.Watts.
+## Albania                                                -0.58660341
+## Algeria                                                -0.44251345
+## Angola                                                 -0.63374245
+## Argentina                                              -0.23267181
+## Armenia                                                -0.53202903
+## Australia                                               0.96164685
+## Austria                                                 0.42185622
+## Azerbaijan                                             -0.36874328
+## Bahrain                                                 2.44504448
+## Bangladesh                                             -0.77588853
+## Belarus                                                 0.08658586
+## Belgium                                                 0.78455956
+## Benin                                                  -0.71832544
+## Bolivia                                                -0.59148740
+## Bosnia and Herzegovina                                 -0.29951692
+## Botswana                                               -0.49025995
+## Brazil                                                 -0.38045514
+## Brunei                                                  1.54607378
+## Bulgaria                                               -0.09266400
+## Cambodia                                               -0.71742640
+## Cameroon                                               -0.73861467
+## Canada                                                  1.48437995
+## Chile                                                  -0.13350974
+## China                                                  -0.12536975
+## Colombia                                               -0.62934443
+## Congo                                                  -0.66579214
+## Costa Rica                                             -0.51271174
+## Croatia                                                -0.25876838
+## Cuba                                                   -0.51210428
+## Cyprus                                                 -0.29852068
+## Czech Republic                                          0.44518276
+## Democratic Republic of the Congo                       -0.75105549
+## Denmark                                                 0.15960277
+## Dominican Republic                                     -0.60900660
+## Ecuador                                                -0.52865154
+## Egypt                                                  -0.55929192
+## El Salvador                                            -0.62125303
+## Estonia                                                 0.65006750
+## Ethiopia                                               -0.68158615
+## Finland                                                 1.11963554
+## FranceÂ Monaco                                          0.39663440
+## Gabon                                                  -0.38140278
+## Georgia                                                -0.51169121
+## Germany                                                 0.40562484
+## Ghana                                                  -0.73443533
+## Greece                                                 -0.15520827
+## Guatemala                                              -0.59727044
+## Haiti                                                  -0.71839834
+## Honduras                                               -0.63128830
+## Hong Kong                                              -0.21853010
+## Hungary                                                -0.10787484
+## Iceland                                                 5.03492178
+## India                                                  -0.64953646
+## Indonesia                                              -0.57054211
+## Iran                                                    0.11212355
+## Iraq                                                   -0.37114883
+## Ireland                                                 0.07322169
+## Israel                                                  0.11547674
+## ItalyÂ San Marino Vatican City                         -0.01111831
+## Ivory Coast                                            -0.64977944
+## Jamaica                                                -0.49504675
+## Japan                                                   0.30947577
+## Jordan                                                 -0.49910460
+## Kazakhstan                                              0.70294098
+## Kenya                                                  -0.68651874
+## Kuwait                                                  2.31103839
+## Kyrgyzstan                                             -0.62224927
+## Latvia                                                 -0.14706828
+## Lebanon                                                -0.41301510
+## Libya                                                   0.03152551
+## Lithuania                                              -0.08321189
+## Luxembourg                                              1.51934546
+## Malaysia                                                0.13134365
+## Malta                                                   0.13134365
+## Mexico                                                 -0.34553823
+## Moldova                                                -0.56653287
+## Mongolia                                               -0.25473483
+## Morocco                                                -0.66302211
+## Mozambique                                             -0.71380593
+## Myanmar                                                -0.74442200
+## Namibia                                                -0.60543473
+## Nepal                                                  -0.72600376
+## Netherlands                                             0.64430876
+## New Zealand                                             0.57510670
+## Nicaragua                                              -0.65354571
+## Nigeria                                                -0.59552095
+## North Korea                                            -0.65777364
+## North Macedonia                                        -0.40903015
+## Norway                                                  1.23741025
+## Oman                                                    1.17066234
+## Pakistan                                               -0.69198589
+## Panama                                                 -0.50350262
+## Paraguay                                               -0.59838817
+## Peru                                                   -0.61644193
+## Philippines                                            -0.69772034
+## Poland                                                 -0.01566213
+## Portugal                                               -0.17177983
+## Qatar                                                   5.34001344
+## Romania                                                -0.33052177
+## Russia                                                  0.80205446
+## Saudi Arabia                                            1.21301458
+## Senegal                                                -0.76116365
+## Singapore                                               0.71805463
+## Slovakia                                                0.18261343
+## Slovenia                                                0.22950949
+## South Africa                                            0.01359323
+## South Korea                                             0.85395601
+## SpainÂ Andorra                                         -0.03558688
+## Sri Lanka                                              -0.68787945
+## Sweden                                                  0.81449528
+## SwitzerlandÂ Liechtenstein                              0.22328908
+## Syria                                                  -0.62944162
+## Tajikistan                                             -0.74765370
+## Tanzania                                               -0.69363819
+## Thailand                                               -0.20259030
+## Togo                                                   -0.69594655
+## Trinidad and Tobago                                     3.85744196
+## Tunisia                                                -0.53615977
+## Turkey                                                 -0.35122408
+## Turkmenistan                                            0.77571492
+## Ukraine                                                -0.01962278
+## United Arab Emirates                                    1.64251443
+## United Kingdom                                          0.11771220
+## United States                                           1.39175416
+## Uruguay                                                -0.40868997
+## Uzbekistan                                             -0.38638397
+## Venezuela                                              -0.11083926
+## Vietnam                                                -0.62961171
+## Yemen                                                  -0.74087443
+## Zambia                                                 -0.64132357
+## Zimbabwe                                               -0.60052643
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{log}\NormalTok{(dataToCluster)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                  PerCapitaEmissions GDP.US.Million.
+## Albania                                  0.53062825        8.552753
+## Algeria                                  1.36097655        8.122074
+## Angola                                   0.00000000        7.547502
+## Argentina                                1.54756251        9.044994
+## Armenia                                  0.47000363        8.358432
+## Australia                                2.80336038       10.929941
+## Austria                                  2.11625551       10.781162
+## Azerbaijan                               1.19392247        8.343316
+## Bahrain                                  3.17805383        9.899731
+## Bangladesh                              -0.69314718        7.601402
+## Belarus                                  1.88706965        8.760453
+## Belgium                                  2.20827441       10.715040
+## Benin                                   -0.51082562        7.134094
+## Bolivia                                  0.64185389        8.049746
+## Bosnia and Herzegovina                   1.98787435        8.705331
+## Botswana                                 1.25276297        8.811503
+## Brazil                                   0.87546874        8.824237
+## Brunei                                   2.75366071       10.219648
+## Bulgaria                                 1.94591015        9.216124
+## Cambodia                                -0.35667494        7.321850
+## Cameroon                                -0.91629073        7.314553
+## Canada                                   2.82731362       10.681895
+## Chile                                    1.60943791        9.490393
+## China                                    2.04122033        9.232982
+## Colombia                                 0.40546511        8.581669
+## Congo                                    0.00000000        7.512071
+## Costa Rica                               0.53062825        9.399058
+## Croatia                                  1.43508453        9.542087
+## Cuba                                     0.99325177        9.156729
+## Cyprus                                   1.79175947       10.244699
+## Czech Republic                           2.33214390       10.039372
+## Democratic Republic of the Congo               -Inf        6.226537
+## Denmark                                  1.77495235       11.026418
+## Dominican Republic                       0.74193734        8.891236
+## Ecuador                                  0.87546874        8.630522
+## Egypt                                    0.99325177        8.191186
+## El Salvador                              0.18232156        8.242493
+## Estonia                                  2.61739583       10.047848
+## Ethiopia                                -2.30258509        6.733402
+## Finland                                  2.14006616       10.793126
+## FranceÂ Monaco                           1.64865863       10.570265
+## Gabon                                    1.16315081        8.823059
+## Georgia                                  1.09861229        8.290042
+## Germany                                  2.27212589       10.734416
+## Ghana                                   -0.51082562        7.698936
+## Greece                                   1.87180218        9.804606
+## Guatemala                                0.09531018        8.373785
+## Haiti                                   -1.20397280        7.215240
+## Honduras                                 0.09531018        7.785721
+## Hong Kong                                1.80828877       10.749592
+## Hungary                                  1.64865863        9.688374
+## Iceland                                  2.50143595       11.061060
+## India                                    0.58778666        7.565793
+## Indonesia                                0.64185389        8.261010
+## Iran                                     2.11625551        9.322150
+## Iraq                                     1.64865863        8.329899
+## Ireland                                  2.10413415       11.365017
+## Israel                                   2.07944154       10.758626
+## ItalyÂ San Marino Vatican City           1.80828877       10.349391
+## Ivory Coast                             -0.69314718        7.748460
+## Jamaica                                  0.95551145        8.447843
+## Japan                                    2.34180581       10.596385
+## Jordan                                   0.91629073        8.362409
+## Kazakhstan                               2.68102153        9.117238
+## Kenya                                   -0.91629073        7.538495
+## Kuwait                                   3.15700042       10.118962
+## Kyrgyzstan                               0.58778666        7.078342
+## Latvia                                   1.41098697        9.790935
+## Lebanon                                  1.33500107        9.138844
+## Libya                                    2.19722458        8.353026
+## Lithuania                                1.66770682        9.941361
+## Luxembourg                               2.79728133       11.671484
+## Malaysia                                 2.10413415        9.249753
+## Malta                                    1.48160454       10.427358
+## Mexico                                   1.36097655        9.027138
+## Moldova                                  0.69314718        7.990915
+## Mongolia                                 2.12823171        8.295798
+## Morocco                                  0.53062825        8.041735
+## Mozambique                              -1.20397280        6.107023
+## Myanmar                                 -0.69314718        7.163947
+## Namibia                                  0.53062825        8.346405
+## Nepal                                   -1.20397280        7.034388
+## Netherlands                              2.33214390       10.884329
+## New Zealand                              2.05412373       10.691308
+## Nicaragua                                0.00000000        7.552237
+## Nigeria                                 -0.69314718        7.642524
+## North Korea                              0.40546511        6.426488
+## North Macedonia                          1.36097655        8.680332
+## Norway                                   2.30258509       11.110521
+## Oman                                     2.82731362        9.426177
+## Pakistan                                 0.00000000        7.062192
+## Panama                                   1.09861229        9.414831
+## Paraguay                                 0.00000000        8.507143
+## Peru                                     0.53062825        8.726319
+## Philippines                              0.26236426        8.101375
+## Poland                                   2.12823171        9.665484
+## Portugal                                 1.70474809       10.017396
+## Qatar                                    3.61361697       10.835947
+## Romania                                  1.41098697        9.467228
+## Russia                                   2.50959926        9.226804
+## Saudi Arabia                             2.96527307        9.908972
+## Senegal                                 -0.51082562        7.284821
+## Singapore                                2.26176310       10.970162
+## Slovakia                                 1.93152141        9.865993
+## Slovenia                                 1.98787435       10.157238
+## South Africa                             2.10413415        8.535819
+## South Korea                              2.58021683       10.371834
+## SpainÂ Andorra                           1.80828877       10.218627
+## Sri Lanka                                0.09531018        8.234300
+## Sweden                                   1.62924054       10.888838
+## SwitzerlandÂ Liechtenstein               1.54756251       11.372732
+## Syria                                    0.47000363        6.791221
+## Tajikistan                              -0.51082562        6.731018
+## Tanzania                                -1.20397280        7.016610
+## Thailand                                 1.38629436        8.880307
+## Togo                                    -0.91629073        6.760415
+## Trinidad and Tobago                      3.31781577        9.634693
+## Tunisia                                  0.99325177        8.107117
+## Turkey                                   1.66770682        9.052282
+## Turkmenistan                             2.53369681        8.868413
+## Ukraine                                  1.54756251        8.176673
+## United Arab Emirates                     3.07269331       10.499160
+## United Kingdom                           1.74046617       10.614426
+## United States                            2.75366071       11.052840
+## Uruguay                                  0.69314718        9.644587
+## Uzbekistan                               1.09861229        7.452402
+## Venezuela                                1.52605630        8.226841
+## Vietnam                                  0.83290912        7.932362
+## Yemen                                   -0.91629073        6.842683
+## Zambia                                  -1.20397280        6.892642
+## Zimbabwe                                -0.35667494        7.290293
+##                                  EnergyConsumptionPerCapita.Watts.
+## Albania                                                   6.971575
+## Algeria                                                   7.413910
+## Angola                                                    6.770675
+## Argentina                                                 7.833006
+## Armenia                                                   7.162785
+## Australia                                                 8.914317
+## Austria                                                   8.559524
+## Azerbaijan                                                7.581974
+## Bahrain                                                   9.513596
+## Bangladesh                                                5.659134
+## Belarus                                                   8.252290
+## Belgium                                                   8.811190
+## Benin                                                     6.261110
+## Bolivia                                                   6.952537
+## Bosnia and Herzegovina                                    7.717529
+## Botswana                                                  7.287834
+## Brazil                                                    7.557107
+## Brunei                                                    9.194506
+## Bulgaria                                                  8.038738
+## Cambodia                                                  6.268149
+## Cameroon                                                  6.087456
+## Canada                                                    9.168372
+## Chile                                                     7.982962
+## China                                                     7.994329
+## Colombia                                                  6.791221
+## Congo                                                     6.606650
+## Costa Rica                                                7.222566
+## Croatia                                                   7.789496
+## Cuba                                                      7.224389
+## Cyprus                                                    7.719352
+## Czech Republic                                            8.577761
+## Democratic Republic of the Congo                          5.963836
+## Denmark                                                   8.327702
+## Dominican Republic                                        6.881103
+## Ecuador                                                   7.173498
+## Egypt                                                     7.071828
+## El Salvador                                               6.827954
+## Estonia                                                   8.725085
+## Ethiopia                                                  6.514713
+## Finland                                                   8.998124
+## FranceÂ Monaco                                            8.539424
+## Gabon                                                     7.555068
+## Georgia                                                   7.225627
+## Germany                                                   8.546635
+## Ghana                                                     6.125777
+## Greece                                                    7.952017
+## Guatemala                                                 6.929517
+## Haiti                                                     6.260537
+## Honduras                                                  6.782192
+## Hong Kong                                                 7.855816
+## Hungary                                                   8.018329
+## Iceland                                                  10.094157
+## India                                                     6.693200
+## Indonesia                                                 7.031741
+## Iran                                                      8.279317
+## Iraq                                                      7.576917
+## Ireland                                                   8.237850
+## Israel                                                    8.282812
+## ItalyÂ San Marino Vatican City                            8.141568
+## Ivory Coast                                               6.691960
+## Jamaica                                                   7.274272
+## Japan                                                     8.466679
+## Jordan                                                    7.262629
+## Kazakhstan                                                8.759826
+## Kenya                                                     6.484177
+## Kuwait                                                    9.472020
+## Kyrgyzstan                                                6.823504
+## Latvia                                                    7.963738
+## Lebanon                                                   7.484537
+## Libya                                                     8.191408
+## Lithuania                                                 8.051213
+## Luxembourg                                                9.183267
+## Malaysia                                                  8.299186
+## Malta                                                     8.299186
+## Mexico                                                    7.629490
+## Moldova                                                   7.046212
+## Mongolia                                                  7.796346
+## Morocco                                                   6.621938
+## Mozambique                                                6.296004
+## Myanmar                                                   6.031646
+## Namibia                                                   6.896087
+## Nepal                                                     6.198885
+## Netherlands                                               8.721227
+## New Zealand                                               8.673667
+## Nicaragua                                                 6.672539
+## Nigeria                                                   6.936537
+## North Korea                                               6.650279
+## North Macedonia                                           7.493707
+## Norway                                                    9.056326
+## Oman                                                      9.023758
+## Pakistan                                                  6.449206
+## Panama                                                    7.249855
+## Paraguay                                                  6.925006
+## Peru                                                      6.849172
+## Philippines                                               6.411161
+## Poland                                                    8.136108
+## Portugal                                                  7.927721
+## Qatar                                                    10.144738
+## Romania                                                   7.659077
+## Russia                                                    8.821865
+## Saudi Arabia                                              9.044545
+## Senegal                                                   5.850765
+## Singapore                                                 8.769538
+## Slovakia                                                  8.350335
+## Slovenia                                                  8.394935
+## South Africa                                              8.170751
+## South Korea                                               8.852879
+## SpainÂ Andorra                                            8.111808
+## Sri Lanka                                                 6.475587
+## Sweden                                                    8.829387
+## SwitzerlandÂ Liechtenstein                                8.389133
+## Syria                                                     6.790772
+## Tajikistan                                                5.999185
+## Tanzania                                                  6.438391
+## Thailand                                                  7.880918
+## Togo                                                      6.423085
+## Trinidad and Tobago                                       9.870722
+## Tunisia                                                   7.149524
+## Turkey                                                    7.618055
+## Turkmenistan                                              8.805750
+## Ukraine                                                   8.131325
+## United Arab Emirates                                      9.234037
+## United Kingdom                                            8.285135
+## United States                                             9.127806
+## Uruguay                                                   7.494486
+## Uzbekistan                                                7.544279
+## Venezuela                                                 8.014303
+## Vietnam                                                   6.789985
+## Yemen                                                     6.066108
+## Zambia                                                    6.734235
+## Zimbabwe                                                  6.916319
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(factoextra)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: ggplot2
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in register(): Can't find generic `scale_type` in package ggplot2 to
+## register S3 method.
+\end{verbatim}
+
+\begin{verbatim}
+## Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+\end{verbatim}
+
+\includegraphics{R-studio-assignment_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{set.seed}\NormalTok{(}\DecValTok{999}\NormalTok{)}
+\FunctionTok{library}\NormalTok{(cluster)}
+\NormalTok{dataToCluster\_DM}\OtherTok{=}\FunctionTok{daisy}\NormalTok{(}\AttributeTok{x=}\NormalTok{dataToCluster, }\AttributeTok{metric =} \StringTok{"gower"}\NormalTok{)}
+\FunctionTok{fviz\_nbclust}\NormalTok{(dataToCluster, }
+\NormalTok{             pam,}
+             \AttributeTok{diss=}\NormalTok{dataToCluster\_DM,}
+             \AttributeTok{method =} \StringTok{"gap\_stat"}\NormalTok{,}
+             \AttributeTok{k.max =} \DecValTok{10}\NormalTok{,}\AttributeTok{verbose =}\NormalTok{ F)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{R-studio-assignment_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{fviz\_nbclust}\NormalTok{(dataToCluster, }
+\NormalTok{             hcut,}
+             \AttributeTok{diss=}\NormalTok{dataToCluster\_DM,}
+             \AttributeTok{method =} \StringTok{"gap\_stat"}\NormalTok{,}
+             \AttributeTok{k.max =} \DecValTok{10}\NormalTok{,}
+             \AttributeTok{verbose =}\NormalTok{ F,}
+             \AttributeTok{hc\_func =} \StringTok{"agnes"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{R-studio-assignment_files/figure-latex/unnamed-chunk-1-3.pdf}
+
+\end{document}
